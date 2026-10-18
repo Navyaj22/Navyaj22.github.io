@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navya Jain | Electronics &amp; Communication Engineer</title>
+<meta name="description" content="Portfolio of Navya Jain: embedded systems, industrial IoT, EV electronics, AI applications and data analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="#home" class="nav__logo">Navya</a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact" class="nav__cta">Contact Me</a></li>
+    </ul>
+    <button class="icon-btn" id="theme-btn" aria-label="Toggle dark mode"><i class="ri-moon-line"></i></button>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><i class="ri-menu-line"></i></button>
+  </nav>
+</header>
+
+<main>
+  <section class="home" id="home">
+    <div class="home__panel"></div>
+    <div class="home__inner">
+      <div class="avatar"><div class="avatar__ring"><img src="assets/img/profile.jpg" alt="Navya Jain"></div></div>
+      <div class="home__text">
+        <h1 class="home__name">Navya Jain</h1>
+        <p class="home__role">Electronics &amp; Communication Engineering Student</p>
+        <p class="home__sub">Embedded systems · Industrial IoT · AI &amp; data analytics</p>
+        <div class="btns"><a class="btn" href="#projects">View Projects</a></div>
+      </div>
+      <div class="home__social">
+        <a href="https://github.com/Navyaj22" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/navya-jain-71b023287/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="mailto:navyajain600@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="title">About Me</h2>
+    <p class="lead">I’m a fourth-year Electronics and Communication Engineering student at SRM Institute of Science and Technology, Kattankulathur, passionate about building practical solutions using technology. My interests span embedded systems, digital design, electric vehicle electronics, software development, AI applications, and data analytics. Through projects, hackathons, an ISRO ISTRAC internship, and leadership experiences, I enjoy exploring new technologies and turning ideas into meaningful solutions.</p>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="title">My Projects</h2>
+    <div class="tabs" role="tablist" aria-label="Project category">
+      <button role="tab" class="tab is-active" id="tab-core" data-tab="core" aria-selected="true" aria-controls="cards"><i class="ri-cpu-line"></i> Core ECE <small id="n-core"></small></button>
+      <button role="tab" class="tab" id="tab-tech" data-tab="tech" aria-selected="false" aria-controls="cards"><i class="ri-code-s-slash-line"></i> Software &amp; Tech <small id="n-tech"></small></button>
+    </div>
+    <p class="tabs__desc" id="tab-desc"></p>
+    <div class="cards" id="cards" role="tabpanel"></div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 class="title">My Skills</h2>
+    <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+    <div class="bento" id="bento"></div>
+  </section>
+
+  <section class="section" id="achievements">
+    <h2 class="title">Achievements</h2>
+    <div class="grid2" id="ach"></div>
+    <h2 class="title title--gap">Leadership &amp; Activities</h2>
+    <div class="grid3" id="lead"></div>
+  </section>
+
+  <section class="section" id="beyond">
+    <h2 class="title">Beyond Engineering</h2>
+    <p class="lead">Beyond technology, I enjoy painting, dancing, and listening to music. I love developing things, experimenting with new ideas, and exploring different ways to bring creativity into what I do. I enjoy collaborating with people, learning from new experiences, and taking on challenges that help me grow both personally and professionally.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="title">Let’s Talk About<br>Your Project</h2>
+    <p class="lead lead--short">Have a project idea or collaboration opportunity? I’d love to connect.</p>
+    <div class="contact">
+      <ul class="contact__links">
+        <li><a href="mailto:navyajain600@gmail.com"><i class="ri-mail-line"></i> navyajain600@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/navya-jain-71b023287/" target="_blank" rel="noopener"><i class="ri-linkedin-box-line"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/Navyaj22" target="_blank" rel="noopener"><i class="ri-github-line"></i> GitHub</a></li>
+        <li><span><i class="ri-map-pin-line"></i> Chennai, Tamil Nadu</span></li>
+      </ul>
+      <form class="form" id="form">
+        <label>Name<input name="name" placeholder="Write your name" required></label>
+        <label>Email Address<input type="email" name="email" placeholder="Write your email" required></label>
+        <label>Message<textarea name="message" rows="4" placeholder="Write your message" required></textarea></label>
+        <button class="btn" type="submit">Send Message</button>
+        <p class="form__note" id="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><p>Chennai, Tamil Nadu &middot; navyajain600@gmail.com</p>
+<p>&copy; 2026 Navya Jain. Layout inspired by the Bedimcode responsive portfolio.</p></footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
