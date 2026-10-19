@@ -8,4 +8,4 @@ Personal portfolio (HTML, CSS, JavaScript). Live at https://navyaj22.github.io
 ## Publish
 Repo name must be `Navyaj22.github.io`; Settings > Pages > Deploy from branch > main > / (root).
 
-Layout inspired by the Bedimcode responsive portfolio template.
+
